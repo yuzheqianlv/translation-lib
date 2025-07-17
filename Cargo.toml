@@ -1,0 +1,20 @@
+[package]
+name = "markdown-translator"
+version = "0.1.0"
+edition = "2021"
+description = "A translation library with DeepLX API integration, rate limiting, and smart text chunking"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+repository = "https://github.com/your-username/markdown-translator"
+keywords = ["translation", "deeplx", "markdown", "api"]
+categories = ["text-processing", "web-programming"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["time", "sync", "macros", "rt-multi-thread"] }
+toml = "0.8"
+
+[dev-dependencies]
+tokio-test = "0.4"
